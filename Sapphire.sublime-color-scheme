@@ -1,0 +1,134 @@
+{
+	"name": "Sapphire",
+	"homepage": "https://github.com/cyckl/sapphire",
+	"description": "I hate every color scheme",
+	"author": "cyckl (https://github.com/cyckl)",
+	"variables": {
+		"black": "#222",
+		"black0": "color(#000 alpha(0.7))",
+		"black1": "color(#000 alpha(0.5))",
+		"black2": "color(#000 alpha(0.3))",
+		"black3": "color(#000 alpha(0.1))",
+
+		"white": "#FCA",
+		"white0": "color(var(white) alpha(0.7))",
+		"white1": "color(var(white) alpha(0.5))",
+		"white2": "color(var(white) alpha(0.3))",
+		"white3": "color(var(white) alpha(0.1))",
+		"gray": "color(var(white) alpha(0.5))",
+
+		"red": "#F40",
+		"orange": "#F70",
+		"yellow": "#FA0",
+		"green": "#7B6",
+		"pink": "#D35"
+	},
+	"globals": {
+		"background": "var(black)",
+		"foreground": "var(white)",
+		"invisibles": "var(white2)",
+		"caret": "var(white0)",
+		"block_caret": "var(white0)",
+		"line_highlight": "var(white3)",
+		"misspelling": "var(red)",
+		"fold_marker": "var(yellow)",
+		"minimap_border": "var(white2)",
+		"accent": "var(red)",
+		"gutter": "var(black2)",
+		"gutter_foreground": "var(white2)",
+		"line_diff_width": "2",
+		"line_diff_added": "var(green)",
+		"line_diff_modified": "var(yellow)",
+		"line_diff_deleted": "var(red)",
+		"selection": "var(white2)",
+		"inactive_selection": "var(white3)",
+		"selection_corner_style": "cut",
+		"selection_corner_radius": "2",
+		"highlight": "var(yellow)",
+		"find_highlight": "var(yellow)",
+		"find_highlight_foreground": "var(black)",
+		"guide": "var(white3)",
+		"active_guide": "var(white1)",
+		"stack_guide": "var(white2)",
+		"brackets_options": "underline",
+		"brackets_foreground": "var(white1)",
+		"bracket_contents_options": "underline",
+		"bracket_contents_foreground": "var(white1)",
+		"tags_options": "underline",
+		"tags_foreground": "var(white1)",
+		"shadow": "var(black2)",
+		"shadow_width": "4"
+	},
+	"rules": [
+		{
+			"name": "Text and Source Base Colors",
+			"scope": "none,source,text",
+			"foreground": "var(white)"
+		},
+		{
+			"name": "Comments",
+			"scope": "comment, punctuation.definition.comment",
+			"font_style": "italic",
+			"foreground": "var(white1)"
+		},
+		{
+			"name": "Error / invalid",
+			"scope": "invalid, invalid.deprecated",
+			"foreground": "var(white)",
+			"background": "var(red)"
+		},
+		{
+			"name": "Keyword",
+			"scope": "keyword.control, keyword.other, keyword.declaration, punctuation.definition.keyword, variable.language, storage.modifier, storage.type, keyword.declaration.function, constant.character.escape, constant.language, constant.other.placeholder",
+			"foreground": "var(red)"
+		},
+		{
+			"name": "Keyword operator",
+			"scope": "keyword.operator",
+			"foreground": "var(white1)"
+		},
+		{
+			"name": "Function",
+			"scope": "entity.name.function,entity.name.tag, variable.function, support.function, punctuation.definition.tag",
+			"foreground": "var(yellow)"
+		},
+		{
+			"name": "class",
+			"scope": "support.class, storage.constant, entity.other, entity.other.attribute-name",
+			"foreground": "var(orange)"
+		},
+		{
+			"name": "Quoted strings + constant values + GOTO names",
+			"scope": "string, punctuation.definition.string, constant, entity.name.label",
+			"foreground": "var(green)",
+			"font_style": "italic"
+		},
+		{
+			"name": "Test",
+			"scope": "/",
+			"foreground": "#FFF",
+			"background": "#00F"
+		},
+
+		{
+			"name": "Markup heading",
+			"scope": "markup.heading",
+			"foreground": "var(red)"
+		},
+		{
+			"name": "Markup text styling",
+			"scope": "markup.bold, markup.italic, markup.underline",
+			"foreground": "var(red)"
+		},
+		{
+			"name": "Markup links + quotes",
+			"scope": "markup.underline.link, markup.raw",
+			"foreground": "var(green)"
+		},
+		{
+			"name": "Markup list",
+			"scope": "markup.list",
+			"foreground": "var(yellow)"
+		}
+	]
+}
