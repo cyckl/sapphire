@@ -1,0 +1,40 @@
+# Colors (Sapphire)
+colors:
+  # Default colors
+  primary:
+    background: '#222222'
+    foreground: '#ffccaa'
+
+    #dim_foreground:    '0xdbdbdb' # not sure
+    #bright_foreground: '0xd9d9d9' # not sure
+    #dim_background:    '0x202020' # not sure
+    #bright_background: '0x3a3a3a' # not sure
+
+  # Cursor colors
+  cursor:
+    text:   '#ffccaa'
+    cursor: '#ffccaa'
+
+  # Normal colors
+  normal:
+    black:   '#333333'
+    red:     '#ff4400'
+    green:   '#77bb66'
+    yellow:  '#ffaa00'
+    blue:    '#6677bb'
+    magenta: '#dd3355'
+    cyan:    '#6699bb'
+    white:   '#ffccaa'
+
+  # Bright colors
+  bright:
+    black:   '#997766'
+    red:     '#ff4400'
+    green:   '#77bb66'
+    yellow:  '#ffaa00'
+    blue:    '#6677bb'
+    magenta: '#dd3355'
+    cyan:    '#6699bb'
+    white:   '#ffccaa'
+
+background_opacity: 0.95
